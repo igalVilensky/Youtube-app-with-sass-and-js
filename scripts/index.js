@@ -8,11 +8,12 @@ modeSwitch.addEventListener("click", () => {
 
 const theme = () => {
   const mood = document.querySelector("#light-dark").checked;
-  body = document.querySelector("body").style;
+  body = document.querySelector(".videos-wrapper", ".top-menu").style;
+
   if (mood) {
-    body.backgroundColor = "white";
+    body.backgroundColor = "#F9F9F9";
   } else {
-    body.backgroundColor = "black";
+    body.backgroundColor = "#0F0F0F";
   }
 };
 
