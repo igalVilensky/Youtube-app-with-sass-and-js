@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   display: grid;
   grid-template-columns: 240px auto;
   grid-template-rows: 56px 270px 75px 75px 70px auto;
@@ -28,14 +29,50 @@ body {
 }
 
 .search-bar {
-  width: 680px;
+  width: auto;
   height: 30px;
   display: flex;
   justify-content: space-between;
-  /*   border: 1px solid rgb(51, 255, 0); */
+  /* border: 1px solid rgb(51, 255, 0); */
+  margin-left: 95px;
 }
 .search-bar input {
   width: 575px;
+  padding-left: 11px;
+  font-size: 16px;
+  height: 32px;
+  letter-spacing: -1px;
+  /* margin-left: 36px; */
+  border: 1px solid #cccccc;
+}
+
+.search-icon-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas.fa-search {
+  border: 1px solid #d3d3d3;
+  background-color: #f8f8f8;
+  color: #818181;
+  width: 63px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas.fa-microphone {
+  /*  background-color: red; */
+  font-size: 18px;
+  color: #606060;
+  width: 63px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .top-right-menu {
@@ -77,8 +114,10 @@ body {
 }
 
 .left-side-main-top-div {
-  margin-left: 25px;
+  /* margin-left: 25px; */
   height: 145px;
+  width: 100%;
+  /*  background-color: red; */
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   flex-direction: column;
@@ -91,8 +130,10 @@ body {
 }
 
 .left-side-main-middle-div {
+  width: 100%;
+  /*  background-color: red; */
   height: 265px;
-  margin-left: 25px;
+  margin-left: -25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -103,14 +144,16 @@ body {
 
 .left-menu-items {
   display: flex;
+  margin-left: 25px;
 }
 
 .left-menu-items h3 {
   margin-left: 25px;
+  font-size: 14px;
 }
 
 .left-menu-items i {
-  font-size: 18px;
+  font-size: 17px;
   color: #606060;
 }
 
@@ -138,6 +181,7 @@ body {
 
 .sub-name-img h3 {
   margin-left: 25px;
+  font-size: 14px;
 }
 
 /* Subscription Images */
@@ -181,7 +225,7 @@ body {
 #icon img {
   width: 80px;
   height: 80px;
-  margin-left: -40px;
+  margin-left: 22px;
   margin-top: 16px;
 }
 
@@ -204,8 +248,27 @@ p {
   font-size: 16px;
 }
 
+/* subscribe button */
+
+#button-sub {
+  margin-left: 100px;
+  margin-top: 38px;
+}
+
+#button-sub button {
+  width: 105px;
+  height: 34px;
+  background-color: #ce4212;
+  color: white;
+  transform: scaleY(1.1);
+}
+
+#button-sub button:focus {
+  outline: none;
+}
+
 #nav-chn {
-  /* background-color: rgb(0, 0, 0); */
+  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
 
@@ -225,8 +288,13 @@ p {
   margin-left: 60px;
   padding-bottom: 10px;
 }
+
 #nav-chn ul li a {
-  color: #616161;
+  font-weight: 300;
+}
+
+#nav-chn ul li a:hover {
+  color: #1c1c1c;
 }
 #nav-chn ul li:nth-child(1) {
   margin-left: 0;
@@ -234,9 +302,14 @@ p {
 
 #nav-chn a {
   text-decoration: none;
-  color: white;
-  letter-spacing: -1.5px;
+  font-weight: 300;
+  color: #606060;
 }
+
+#search-nav {
+  background-color: #ffffff;
+}
+
 /* sort-uploads-play-all section above videos*/
 
 .sort-uploads-play-all {
@@ -270,6 +343,7 @@ p {
 .channel-icon-name-subscribe-wrapper {
   display: flex;
   justify-content: space-around;
+  background-color: #f9f9f9;
 }
 
 .nav-channel-wrapper {
