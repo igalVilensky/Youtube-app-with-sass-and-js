@@ -52,7 +52,7 @@ body {
   align-items: center;
 }
 
-.fas.fa-search {
+.fas.fa-search.top {
   border: 1px solid #d3d3d3;
   background-color: #f8f8f8;
   color: #818181;
@@ -150,6 +150,8 @@ body {
 .left-menu-items h3 {
   margin-left: 25px;
   font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 .left-menu-items i {
@@ -182,6 +184,7 @@ body {
 .sub-name-img h3 {
   margin-left: 25px;
   font-size: 14px;
+  font-weight: 400;
 }
 
 /* Subscription Images */
@@ -261,6 +264,7 @@ p {
   background-color: #ce4212;
   color: white;
   transform: scaleY(1.1);
+  border: none;
 }
 
 #button-sub button:focus {
@@ -271,7 +275,6 @@ p {
   background-color: #f9f9f9;
   display: flex;
   justify-content: center;
-
   height: 58px;
 }
 #nav-chn ul {
@@ -282,6 +285,7 @@ p {
   list-style: none;
   width: auto;
   margin-left: -450px;
+  padding-top: 20px;
 }
 
 #nav-chn ul li {
@@ -289,8 +293,13 @@ p {
   padding-bottom: 10px;
 }
 
-#nav-chn ul li a {
-  font-weight: 300;
+#nav-chn ul li:active {
+  border-bottom: 2px solid gray;
+}
+
+#nav-chn h3 {
+  font-weight: 400;
+  font-size: 15px;
 }
 
 #nav-chn ul li a:hover {
@@ -313,25 +322,51 @@ p {
 /* sort-uploads-play-all section above videos*/
 
 .sort-uploads-play-all {
-  /* border: 3px solid rgb(2, 255, 2); */
   background-color: #f1f1f1;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 4;
   height: 70px;
-  width: auto;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .sort-uploads-play-all h3 {
-  /* border: 1px dotted black; */
+  font-weight: 400;
   margin-left: 200px;
+  font-size: 16px;
 }
 
+#play-all {
+  font-size: 15px;
+  margin-left: 25px;
+  margin-top: 3px;
+}
+.fas.fa-sort-amount-down {
+  margin-right: -190px;
+}
+.sort-by {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* margin-left: 300px; */
+  width: auto;
+  height: 70px;
+}
+
+#sort-by {
+  padding-right: 185px;
+}
 .sort-uploads-play-all i {
   margin-left: 5px;
+}
+.uploads-play-all {
+  display: flex;
+  align-items: center;
 }
 
 .icon-details-wrapper {
@@ -385,4 +420,18 @@ p {
 .video-img h2 {
   /* color: white; */
   /* padding-top: 1vh; */
+}
+
+.title-counter {
+  height: 60px;
+}
+.title-counter h2 {
+  font-size: 14px;
+  padding-top: 7px;
+}
+
+.title-counter p {
+  font-size: 12px;
+  padding: 10px 0;
+  margin-left: 0;
 }
