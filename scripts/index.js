@@ -18,7 +18,10 @@ const theme = () => {
   body8 = document.querySelector(`.left-side-main-bottom-div`).style;
   body9 = document.querySelector(`html`).style;
   body10 = document.querySelector(`.fas.fa-microphone `).style;
+  body11 = document.querySelector(`#name-details h2`).style;
 
+  /* body12 = document.querySelectorAll(`#nav-chn ul li a h3`).style; */
+  body13 = document.querySelector(`#name-details p`).style;
   if (mood) {
     body.backgroundColor = "#0F0F0F";
     body2.backgroundColor = "#181818";
@@ -30,6 +33,9 @@ const theme = () => {
     body8.backgroundColor = "#212121";
     body9.backgroundColor = "#212121";
     body10.color = "#FFFFFF";
+    body11.color = "#FFFFFF";
+    /* body12.color = "#FFFFFF"; */
+    body13.color = "#FFFFFF";
   } else {
     body.backgroundColor = "#f1f1f1";
     body2.backgroundColor = "#f9f9f9";
@@ -41,6 +47,9 @@ const theme = () => {
     body8.backgroundColor = "#FFFFFF";
     body9.backgroundColor = "#FFFFFF";
     body10.color = "#6F6F6F";
+    body11.color = "#000000";
+    /* body12.color = "#606060"; */
+    body13.color = "#000000";
   }
 };
 
